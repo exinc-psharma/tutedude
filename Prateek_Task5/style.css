@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 30px 5px 5px 5px;
+    padding: 5px 5px 5px 5px; 
+    color: rgb(64, 64, 64);
+}
+.name{
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+
+}
+.name span{
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+    padding: 20px 20px 20px 20px; 
+    color: rgba(0, 166, 255, 0.807);
+    background-color: rgb(228, 252, 252);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width: 76vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    margin-top: 5vh;
+}
+.text{
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.image{
+    width: 45%;
+    height: auto;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: contain;
+}
+.image img{
+    width: 85%;
+    height: auto;
+    text-align: end;
+}
+ul{
+    list-style: none;
+    padding: 5px 5px 5px 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    top: 0;
+    display: inline-block;
+    width: 50%;
+    margin-top: 40px;
+}
+nav{
+    width: 100%;
+    text-align: center;
+}
+nav>ul>li{
+    color: grey;
+    display: inline;
+    margin: 0 15px;
+    padding: 5px 5px 5px 5px;
+}
+.text h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: darkslategrey;
+    font-size: 55px;
+    line-height: 1.2;
+}
+.text h1 span{
+    color: rgba(0, 166, 255, 0.807);
+}
+.text p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    color: darkgray;
+}
+.text button{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    padding: 25px 45px 25px 45px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(0, 166, 255, 0.807);
+    color: white;
+    margin: 35px 0px 0px 0px;
+    font-size: 21px;
+}
+nav ul li:hover{
+    color: rgba(0,166,255,0.807);
+    cursor:pointer;
+}
+.text button:hover{
+    opacity: 0.8;
+}

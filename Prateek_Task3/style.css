@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(224, 116, 76);
+}
+.head{
+    color: darkblue;
+}
+#bglime{
+    background-color: #6EEB6E;
+    font-size: 47px;
+}
+
+h2 span{
+    color: red;
+}
+#para{
+    color: green;
+    font-size: 20px;
+}
+p{
+    color: white;
+    font-size: 29px;
+}
+p span{
+    color: black;
+    font-size: 35px;
+}
+strong{
+    color: black;
+    font-size: 25px;
+}
+ul{
+    color: white;
+}
+ul li:first-child a{
+    background-color: yellow;
+    color: green;
+}
+
+ul li:last-child a{
+    background-color: blue;
+    color: darkblue;
+}
+ol li:nth-child(2){
+    color: blue;
+}
+
+ol li:nth-child(3){
+    color: red;
+}
