@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 80px;
+    font-family:"Poppins",sans-serif;
+}
+.hero{
+    background: linear-gradient(
+        to right,
+        #ffffff 63%,
+        #f2f2f2 63%
+    );
+}
+.container{
+    width: 100%;
+}
+.logo a{
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: orange;
+}
+.logo a span{
+    color: blue;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1000;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+nav>ul>li>a{
+    color: grey;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color: orange;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+.search-box input{
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+.cart{
+    color: blue;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 2px solid grey;
+    border-radius: 10%;
+}
+.cart span{
+    color: grey;
+}
+.profile img{
+    width: 70px;
+    border-radius: 50%;
+}
+.hero-content{
+    width: 80vw;
+    height: 73vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.left .image{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    transform: scale(0.85);
+    transform-origin: top center;
+}
+.left .image img{
+    width: 180px;
+    height: 100px;
+}
+.left h2{
+    color: rgba(0, 0, 0, 0.775);
+    font-size:75px;
+    width: 100%;
+}
+.left h2 span{
+    color: orange;
+}
+.left p{
+    font-size: 22px;
+    color: darkgrey;
+}
+.left a{
+    margin-top: 10px;
+    width: 200px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 60px;
+    background-color: rgba(0, 0, 0, 0.775);
+    border-radius: 30px;
+    transition: 0.6s ease-in-out;
+}
+.right{
+    display: flex;
+    width: 60%;
+    position: relative;
+}
+.right img{
+    width: 100%;
+}
+.badge{
+    position: absolute;
+    bottom: 40px;
+    left: 270px;
+}
+.badge img{
+    width: 60px;
+}
+.hero-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: orange;
+    color: white;
+
+    padding: 25px;
+}
+.stat{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.stat i{
+    font-size: 44px;
+}
+.stat:hover{
+    color: black;
+}
+.left a:hover{
+    opacity: 0.9;
+    transform: scale(1.1) rotate(-5deg);
+    color: orange;
+}
