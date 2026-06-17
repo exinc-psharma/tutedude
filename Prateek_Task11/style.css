@@ -7,6 +7,7 @@ body{
     padding-top: 80px;
     font-family:"Poppins",sans-serif;
 }
+/*Landing Page*/
 .hero{
     background: linear-gradient(
         to right,
@@ -175,4 +176,126 @@ nav>ul>li>a{
     opacity: 0.9;
     transform: scale(1.1) rotate(-5deg);
     color: orange;
+}
+.profile img:hover{
+    opacity: 0.8;
+}
+/*Landing Page End*/
+
+/*Product Page*/
+.breadcrumb{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 10vw;
+    color: grey;
+    gap: 10px;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: grey;
+}
+.product-display{
+    width: 80vw;
+    height: 55vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.product-display .left{
+    display: flex;
+    background-color:#f2f2f2;
+}
+.product-display .right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: scale(0.9,0.84);
+    transform-origin: top center;
+}
+.product-display .right h1{
+    font-size: 3.2rem;
+}
+.product-display .right p{
+    color: grey;
+    font-size: 1.3rem;
+}
+.price-section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.price{
+    font-size: 2.5rem;
+    padding: 10px 35px 10px 30px;
+    border-radius: 7%;
+    font-weight:600;
+    color: blue;
+    background-color:#f2f2f2;
+}
+.price sup{
+    font-size: 2rem;
+    font-weight:lighter ;
+}
+.discount h3{
+    font-size: 2rem;
+    color: lightgreen;
+}
+.add-to-cart{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+.add-to-cart select{
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    padding: 25px 30px 25px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: grey;
+}
+.add-to-cart .arrow-down i{
+    color: grey;
+    position: absolute;
+    top: 38%;
+    right: 653px;
+    pointer-events: none;
+}
+.add-to-cart .cart-btn a{
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: orange;
+    padding: 25px 80px;
+    border-radius: 10px;
+    transition: 0.6s ease-in-out;
+}
+.photo-display{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.photo-display img{
+    width: 200px;
+    height: 120px;
+    background-color: #f2f2f2;
+}
+.breadcrumb a:hover{
+    color: orange;
+}
+.add-to-cart .cart-btn a:hover{
+    color: black;
+    opacity: 0.8;
+    transform: scale(1.05) rotate(-2deg);
 }

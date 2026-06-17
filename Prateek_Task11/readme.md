@@ -2,7 +2,7 @@
 
 ## Description
 
-A modern sneaker-themed multi-page website built using HTML5 and CSS3 as part of the TuteDude Frontend Development course. The current version includes the landing page with a navigation bar, hero section, call-to-action button, and statistics section.
+A modern sneaker-themed multi-page e-commerce website built using HTML5 and CSS3 as part of the TuteDude Frontend Development course. The project is based on a sneaker store design and currently includes a fully designed Landing Page and Product Display Page with interactive UI elements and product information.
 
 ## Features
 
@@ -13,7 +13,11 @@ A modern sneaker-themed multi-page website built using HTML5 and CSS3 as part of
 * Hero section with sneaker showcase
 * Call-to-action "Shop Now" button
 * Statistics section displaying reviews, customers, quality, and ratings
-* Hover effects on navigation links and buttons
+* Product Display Page with breadcrumb navigation
+* Product image showcase with additional preview images
+* Product description, pricing, and discount information
+* Quantity selector and Add to Cart button
+* Hover effects on navigation links, buttons, and interactive elements
 * Font Awesome icons integration
 
 ## CSS Concepts Used
@@ -25,13 +29,18 @@ A modern sneaker-themed multi-page website built using HTML5 and CSS3 as part of
 * CSS Transitions
 * Border Radius
 * Linear Gradients
-* Pseudo-elements (`::before`, `::after`)
 * Z-index Layering
+* Custom Form Styling
+* Appearance Property (`appearance: none`)
+* Transform Origin
+* Responsive Layout Techniques
 
 ## How to Run
 
-1. Download project files.
-2. Open `index.html` in a browser.
+1. Download or clone the project files.
+2. Open `index.html` in a browser to view the Landing Page.
+3. Open `product.html` to view the Product Display Page.
+4. Navigate through the website using the provided links.
 
 ## Technologies Used
 
@@ -41,16 +50,20 @@ A modern sneaker-themed multi-page website built using HTML5 and CSS3 as part of
 
 ## Improvements from Previous Tasks
 
-* Built a complete landing page layout from a design reference.
-* Implemented a structured navigation bar using Flexbox.
-* Added Font Awesome icons for search and cart functionality.
-* Practiced positioning techniques for hero section layout.
-* Added interactive hover effects and button animations.
-* Experimented with decorative background elements using pseudo-elements.
+* Built a complete multi-page website structure.
+* Implemented a product showcase page with a professional layout.
+* Added breadcrumb navigation for improved user experience.
+* Practiced advanced Flexbox layouts across multiple sections.
+* Customized form controls such as the quantity selector.
+* Added interactive hover animations for buttons and navigation elements.
+* Improved component reusability by maintaining a consistent header across pages.
+* Applied product pricing, discount, and purchase UI elements commonly used in e-commerce websites.
 
 ## Notes
 
 * This project is currently under development.
-* The landing page has been completed and styled.
-* Additional pages such as Shop, About, and Contact will be implemented in future updates.
-* The current focus is on layout design, Flexbox, positioning, and UI styling using HTML and CSS.
+* Landing Page has been completed and styled.
+* Product Display Page has been completed and styled.
+* Shopping Cart Page is under development.
+* Payment Page is under development.
+* The current focus is on multi-page layouts, Flexbox positioning, interactive UI components, and e-commerce website design using HTML and CSS.
