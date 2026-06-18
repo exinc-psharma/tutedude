@@ -209,26 +209,26 @@ nav>ul>li>a{
     display: flex;
     background-color:#f2f2f2;
 }
-.product-display .right{
+.product-display .product-right{
     display: flex;
     flex-direction: column;
     gap: 20px;
     transform: scale(0.9,0.84);
     transform-origin: top center;
 }
-.product-display .right h1{
+.product-display .product-right h1{
     font-size: 3.2rem;
 }
-.product-display .right p{
+.product-display .product-right p{
     color: grey;
     font-size: 1.3rem;
 }
-.price-section{
+.product-right .price-section{
     display: flex;
     gap: 20px;
     align-items: center;
 }
-.price{
+.product-right .price{
     font-size: 2.5rem;
     padding: 10px 35px 10px 30px;
     border-radius: 7%;
@@ -236,21 +236,21 @@ nav>ul>li>a{
     color: blue;
     background-color:#f2f2f2;
 }
-.price sup{
+.product-right .price sup{
     font-size: 2rem;
     font-weight:lighter ;
 }
-.discount h3{
+.product-right .discount h3{
     font-size: 2rem;
     color: lightgreen;
 }
-.add-to-cart{
+.product-right .add-to-cart{
     display: flex;
     gap: 10px;
     align-items: center;
     position: relative;
 }
-.add-to-cart select{
+.product-right .add-to-cart select{
     appearance: none;
     border: none;
     outline: none;
@@ -260,14 +260,14 @@ nav>ul>li>a{
     font-size: 20px;
     color: grey;
 }
-.add-to-cart .arrow-down i{
+.product-right .add-to-cart .arrow-down i{
     color: grey;
     position: absolute;
     top: 38%;
-    right: 653px;
+    right: 695px;
     pointer-events: none;
 }
-.add-to-cart .cart-btn a{
+.product-right .add-to-cart .cart-btn a{
     display: flex;
     text-decoration: none;
     font-size: 20px;
@@ -298,4 +298,196 @@ nav>ul>li>a{
     color: black;
     opacity: 0.8;
     transform: scale(1.05) rotate(-2deg);
+}
+.product-right .add-to-cart select:hover{
+    cursor: pointer;
+}
+/*Product Page End*/
+/*Shop Cart Page*/
+.cart-info{
+    width: 80vw;
+    height: 70vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.cart-info .cart-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.cart-info .cart-left h1{
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.837);
+    font-size: 45px;
+}
+.cart-info .cart-left table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 20px 20px;
+}
+.cart-info .cart-left table th{
+    color: #8d8d8d;
+    font-weight: 600;
+    text-align: left;
+}
+.cart-info .cart-left table td{
+    color: #2f3a45;
+    padding: 12px 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+}
+.cart-info .cart-left table td:first-child{
+    text-align: left;
+}
+.cart-info .cart-left tr{
+    border-bottom: 1px solid #e5e5e5;
+}
+.cart-info .cart-left thead{
+    position: relative;
+}
+.cart-info .cart-left thead::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ddd;
+}
+.cart-info .cart-left table tbody tr td span{
+    font-weight: 700;
+}
+.cart-info .cart-left table tbody tr td i{
+    color: red;
+    transition: 0.3s ease-in-out;
+}
+.cart-info .cart-right{
+    margin-top: 20px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.cart-info .cart-right section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.cart-info .cart-right section .payout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+.cart-info .cart-right section .payout h4{
+    color: darkslategrey;
+}
+.cart-right .payout .coupon{
+    display: flex;
+    gap: 10px;
+}
+.cart-right .payout .coupon input{
+    padding: 20px 95px 20px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.cart-right .paytout .coupon input::placeholder{
+    color: #d3d3d3;
+}
+.cart-right .payout .coupon button{
+    background-color: rgba(0, 76, 255, 0.875);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    transition: 0.6s ease-in-out;
+}
+.cart-info .cart-right section .payout .summary-row{
+    display: flex;
+    justify-content: space-between;
+    color: #8d8d8d;
+    font-size: 20px;
+    font-weight: 500;
+}
+.cart-info .cart-right section .payout .summary-row-total{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    color: #2f3a45;
+    font-size: 22px;
+    font-weight: 600;
+}
+.cart-info .cart-right section .payout .summary-row-total span:last-child{
+    font-weight: 700;
+}
+.cart-info .cart-right section .pay-btn{
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 25px 45px;
+    border: none;
+    transition: 0.6s ease-in-out;
+}
+.cart-info .cart-right section .images-sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cart-info .cart-right section .images-sec img{
+    width: 100px;
+    height: 35px;
+}
+.backtrack{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.backtrack a{
+    text-decoration: none;
+    color: #2f3a45;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+.cart-info .cart-left table tbody tr td i:hover{
+    transform: scale(1.5);
+}
+.cart-right .payout .coupon button:hover{
+    color: black;
+    transform: scale(1.1);
+}
+.cart-info .cart-right section .pay-btn:hover{
+    color: black;
+    opacity: 0.8;
+    transform: scale(1.05) rotate(-2deg);
+}
+.backtrack a:hover{
+    color: orange;
 }
