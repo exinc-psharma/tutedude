@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 50px;
+}
+.box{
+    padding: 50px;
+    border: 1px solid black
+}
+.in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 10px;
+}
+.in input{
+    padding: 10px;
+    border-radius: 5px;
+}
+.in button{
+    padding: 10px 20px;
+    background-color: #7d7d7dcf;
+    border-radius: 5px;
+}
