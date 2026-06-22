@@ -1,101 +1,109 @@
-# Thala 7. Sneaker Website
+# Project Name
 
-## Description
+Thala 7 Sneaker Store
 
-A multi-page sneaker store website built using HTML5 and CSS3 as part of the TuteDude Frontend Development course. The project is based on a provided UI design and focuses on building structured layouts using Flexbox, positioning, styling, and responsive design principles.
+---
 
-Currently, the Landing Page, Product Display Page, and Shopping Cart Page have been completed.
+# Description
 
-## Features
+Thala 7 Sneaker Store is a multi-page e-commerce website built using HTML and CSS. The project recreates a sneaker shopping experience with a landing page, product display page, shopping cart page, and payment page.
 
-### Landing Page
-- Fixed navigation bar with logo and navigation links
-- Search bar with Font Awesome icons
-- Shopping cart icon and user profile section
-- Hero section with sneaker showcase
+The goal of this project was to practice advanced CSS concepts, page layouts, Flexbox, positioning, and building a complete UI from a given design reference.
+
+---
+
+# Features
+
+## Landing Page
+- Fixed navigation bar
+- Hero section with featured sneaker
 - Call-to-action "Shop Now" button
-- Service overview/statistics section
-- Hover effects and button animations
+- Service statistics section
+- Hover effects on buttons and icons
 
-### Product Display Page
-- Product breadcrumb navigation
-- Large product image display
+## Product Display Page
+- Breadcrumb navigation
+- Product image showcase
 - Product information section
-- Pricing and discount display
-- Quantity selector
-- Add to Cart button
-- Product image gallery section
+- Price and discount display
+- Add to Cart section
+- Product gallery
 
-### Shopping Cart Page
-- Shopping cart table layout
-- Product, quantity, and pricing display
-- Remove item icons
-- Coupon code input section
+## Shopping Cart Page
+- Cart table layout
+- Product quantity and pricing information
+- Coupon code section
+- Order summary card
+- Payment button
+- Continue shopping link
+
+## Payment Page
+- Checkout form
+- Payment method selection
+- Card information fields
+- Country and ZIP code fields
 - Order summary section
-- Subtotal, taxes, discount, and total calculation layout
-- Pay Now button
-- Razorpay and security badge section
-- Continue Shopping navigation link
+- Coupon code functionality UI
+- Payment button and payment provider logos
 
-## CSS Concepts Used
+---
+
+# CSS Concepts Used
 
 - Flexbox
-- Fixed, Relative, and Absolute Positioning
+- Fixed Positioning
+- Relative Positioning
+- Absolute Positioning
 - Hover Effects
 - CSS Transforms
 - CSS Transitions
 - Border Radius
 - Linear Gradients
-- Z-Index Layering
-- Tables Styling
-- Custom Form Elements
+- Viewport Units (vh, vw)
+- Pseudo Elements
+- Typography Styling
 - Box Model
-- Nested Flex Layouts
+- Custom Layout Design
 
-## Technologies Used
+---
+
+# How to Run
+
+1. Download or clone the project.
+2. Open the project folder.
+3. Open `index.html` in a browser.
+4. Navigate between pages using the provided links.
+5. Explore all sections of the website.
+
+---
+
+# Technologies Used
 
 - HTML5
 - CSS3
 - Font Awesome Icons
 
-## Project Structure
+---
 
-```text
-├── index.html          (Landing Page)
-├── product.html        (Product Display Page)
-├── shop.html           (Shopping Cart Page)
-├── payment.html        (Under Development)
-├── style.css
-└── images/
-```
+# Improvements from Previous Tasks
 
-## How to Run
+- Built a complete multi-page website instead of a single page layout.
+- Practiced creating reusable page structures.
+- Improved Flexbox usage for complex layouts.
+- Added hover animations and transitions.
+- Implemented product, cart, and payment page designs.
+- Worked with breadcrumb navigation and card-based layouts.
 
-1. Download or clone the repository.
-2. Open the project folder.
-3. Launch `index.html` in your browser.
-4. Navigate through the pages using the provided links.
+---
 
-## Learning Outcomes
+# Notes
 
-- Building multi-page website layouts
-- Creating reusable navigation components
-- Working with Flexbox for page structure
-- Styling forms and buttons
-- Designing product showcase layouts
-- Creating shopping cart interfaces
-- Using icons and images effectively
-- Managing page-to-page consistency using a single CSS file
+- This project focuses on recreating the provided design using HTML and CSS.
+- All pages are static and intended for UI practice.
+- Future improvements may include:
+  - Responsive design using Media Queries
+  - Mobile navigation menu
+  - JavaScript functionality
+  - Dynamic cart and checkout features
 
-## Current Progress
-
-- ✅ Landing Page Completed
-- ✅ Product Display Page Completed
-- ✅ Shopping Cart Page Completed
-- ⏳ Payment Page In Progress
-
-## Notes
-
-- This project is being developed as part of TuteDude Task 11.
-- Focus has been placed on HTML structure, CSS styling, layout creation, and UI implementation.
-- Functionality such as cart management and payment processing is not implemented as JavaScript is not part of the current task requirements.
+---

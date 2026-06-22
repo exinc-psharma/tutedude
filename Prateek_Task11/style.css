@@ -99,6 +99,8 @@ nav>ul>li>a{
     flex-direction: column;
     justify-content: center;
     width: 40%;
+    transform: scale(0.9,0.8);
+    margin-top: 25px;
 }
 .left .image{
     display: flex;
@@ -205,10 +207,11 @@ nav>ul>li>a{
     justify-content: space-evenly;
     gap: 50px;
 }
-.product-display .left{
+.product-display .product-left{
     display: flex;
-    background-color:#f2f2f2;
+    background-color: #f2f2f2;
 }
+
 .product-display .product-right{
     display: flex;
     flex-direction: column;
@@ -369,7 +372,7 @@ nav>ul>li>a{
     color: red;
     transition: 0.3s ease-in-out;
 }
-.cart-info .cart-right{
+.cart-right{
     margin-top: 20px;
     width: 35%;
     display: flex;
@@ -378,14 +381,14 @@ nav>ul>li>a{
     align-items: center;
     gap: 20px;
 }
-.cart-info .cart-right section{
+.cart-right section{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
 }
-.cart-info .cart-right section .payout{
+.cart-right section .payout{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -395,7 +398,7 @@ nav>ul>li>a{
     border-radius: 10px;
     padding: 20px;
 }
-.cart-info .cart-right section .payout h4{
+.cart-right section .payout h4{
     color: darkslategrey;
 }
 .cart-right .payout .coupon{
@@ -403,6 +406,7 @@ nav>ul>li>a{
     gap: 10px;
 }
 .cart-right .payout .coupon input{
+    width: 70%;
     padding: 20px 95px 20px 20px;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -410,10 +414,11 @@ nav>ul>li>a{
     font-weight: 600;
     margin-bottom: 20px;
 }
-.cart-right .paytout .coupon input::placeholder{
+.cart-right .payout .coupon input::placeholder{
     color: #d3d3d3;
 }
 .cart-right .payout .coupon button{
+    width: 30%;
     background-color: rgba(0, 76, 255, 0.875);
     color: white;
     border: none;
@@ -422,14 +427,14 @@ nav>ul>li>a{
     margin-bottom: 20px;
     transition: 0.6s ease-in-out;
 }
-.cart-info .cart-right section .payout .summary-row{
+.cart-right section .payout .summary-row{
     display: flex;
     justify-content: space-between;
     color: #8d8d8d;
     font-size: 20px;
     font-weight: 500;
 }
-.cart-info .cart-right section .payout .summary-row-total{
+.cart-right section .payout .summary-row-total{
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
@@ -437,27 +442,29 @@ nav>ul>li>a{
     font-size: 22px;
     font-weight: 600;
 }
-.cart-info .cart-right section .payout .summary-row-total span:last-child{
+.cart-right section .payout .summary-row-total span:last-child{
     font-weight: 700;
 }
-.cart-info .cart-right section .pay-btn{
+.cart-right section .pay-btn{
     margin-top: 20px;
     background-color: orange;
     color: white;
     font-size: 22px;
     font-weight: 600;
+    text-align: center;
+    text-decoration: none;
     border-radius: 15px;
     padding: 25px 45px;
     border: none;
     transition: 0.6s ease-in-out;
 }
-.cart-info .cart-right section .images-sec{
+.cart-right section .images-sec{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.cart-info .cart-right section .images-sec img{
+.cart-right section .images-sec img{
     width: 100px;
     height: 35px;
 }
@@ -483,7 +490,7 @@ nav>ul>li>a{
     color: black;
     transform: scale(1.1);
 }
-.cart-info .cart-right section .pay-btn:hover{
+.cart-right section .pay-btn:hover{
     color: black;
     opacity: 0.8;
     transform: scale(1.05) rotate(-2deg);
@@ -491,3 +498,226 @@ nav>ul>li>a{
 .backtrack a:hover{
     color: orange;
 }
+/*Shop Cart Page End*/
+/*Pay Page*/
+.end{
+    background: linear-gradient(
+        to right,
+        #ffffff 55%,
+        #f2f2f2 55%
+    );
+}
+.payment{
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: -7vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+
+}
+.pay-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#checkout{
+    display: flex;
+    color:#8d8d8d;
+}
+.pay-left label{
+    margin-top: -15px;
+    color: #2f3a45;
+    font-weight: 600;
+}
+.pay-left input{
+    margin-top: -12px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    background-color: #f2f2f29d;
+}
+.paying{
+    display: flex;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+.paying .pay {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+.paying .pay button{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px 27px;
+    border-radius: 10px;
+}
+.paying .pay .big{
+    padding: 10px 50px 10px 50px;
+}
+.info{
+    margin-left: 27px;
+}
+.info form .n{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 96%;
+}
+.info .exp{
+    display: flex;
+    margin-top: 5px;
+    gap: 150px;
+}
+.info .exp input{
+    margin-top: 10px;
+    width: 175%;
+}
+.info .loc{
+    display: flex;
+    margin-top: 20px;
+}
+.loc p{
+    margin-top: -10px;
+}
+.loc .loc1 select{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    background-color:#f2f2f29d;
+    margin-right: 23px;
+    width: 295px;
+}
+.loc .loc2 p{
+    margin-bottom: 10px;
+}
+.loc .loc2 input{
+    width: 323px;
+}
+.pay .bb{
+    border: 2px solid orange;
+}
+.pay button .lefty{
+    color: orange;
+}
+.pay button p{
+    color: orange;
+}
+.pay-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.pay-right section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.pay-right section .payout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+.pay-right section .payout h4{
+    color: darkslategrey;
+}
+.pay-right .payout .coupon{
+    display: flex;
+    gap: 10px;
+}
+.pay-right .payout .coupon input{
+    width: 70%;
+    padding: 20px 95px 20px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.pay-right .paytout .coupon input::placeholder{
+    color: #d3d3d3;
+}
+.pay-right .payout .coupon button{
+    width: 30%;
+    background-color: rgba(0, 76, 255, 0.875);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    transition: 0.6s ease-in-out;
+}
+.pay-right section .payout .summary-row{
+    display: flex;
+    justify-content: space-between;
+    color: #8d8d8d;
+    font-size: 20px;
+    font-weight: 500;
+}
+.pay-right section .payout .summary-row-total{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    color: #2f3a45;
+    font-size: 22px;
+    font-weight: 600;
+}
+.pay-right section .payout .summary-row-total span:last-child{
+    font-weight: 700;
+}
+.pay-right section .pay-btn{
+    margin-top: 20px;
+    background-color: orange;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 25px 45px;
+    border: none;
+    transition: 0.6s ease-in-out;
+}
+.pay-right section .images-sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pay-right section .images-sec img{
+    width: 100px;
+    height: 35px;
+}
+.pay-right .payout .coupon button:hover{
+    color: black;
+    transform: scale(1.1);
+}
+.pay-right section .pay-btn:hover{
+    color: black;
+    opacity: 0.8;
+    transform: scale(1.05) rotate(-2deg);
+}
+.pay button:hover{
+    cursor: pointer;
+}
+/*Pay Page End*/

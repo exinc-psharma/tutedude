@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="end">
+        <div class="payment">
+            <div class="pay-left">
+                <p id="checkout">Checkout</p>
+                <h2>Contact Details</h2>
+                <label for="emailing">Email ID</label>
+                <input id="emailing" type="email" placeholder="xyz@mail.com">
+                <h2>Payment</h2>
+                <div class="paying">
+                    <div class="pay">
+                        <button class="bb">
+                            <i class="fa-regular fa-credit-card big lefty"></i>
+                            <br>
+                            <p>Card</p>
+                        </button>
+                        <button>
+                            <i class="fa-brands fa-bitcoin big"></i>
+                            <br>
+                            Crypto
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-building-columns big"></i>
+                            <br>
+                            Bank
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-ellipsis-vertical righty"></i>
+                        </button>
+                    </div>
+                    <div class="info">
+                        <form action="#">
+                            <p><label for="cardno">Card Number</label></p>
+                            <input class="n"id="cardno"type="tel" inputmode="numeric" maxlength="19"placeholder="4444 4411 4141 1111" required>
+                            <div class="exp">
+                                <div class="ex1">
+                                    <p><label for="expiry">Expiry</label></p>
+                                    <input id="expiry" type="month" placeholder="YYYY-MM" required>
+                                </div>
+                                <div class="ex2">
+                                    <p><label for="cvc">CVC</label></p>
+                                    <input id="cvc"  type="password"maxlength="3"placeholder="***" required>
+                                </div>
+                            </div>
+                            <div class="loc">
+                                <div class="loc1">
+                                    <p><label for="country">Country</label></p>
+                                    <select name="country" id="country">
+                                        <option value="IN" selected>India</option>
+                                        <option value="US">United States</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="AU">Australia</option>
+                                    </select>
+                                </div>
+                                <div class="loc2">
+                                    <p><label for="zip">ZIP</label></p>
+                                    <input id="zip"  type="tel" maxlength="10"placeholder="XXXXXX" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="pay-right">
+                <h1>Order Summary</h1>
+                <section>
+                <div class="payout">
+                    <h4>Enter Coupon Code</h4>
+                    <div class="coupon">
+                        <input
+                            type="text"
+                            placeholder="COUPON CODE">
+                        <button>
+                            Apply Coupon
+                        </button>
+                    </div>
+                    <div class="summary-row">
+                        <span>Sub Total</span>
+                        <span>₹4,700</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Taxes (if applicable)</span>
+                        <span>₹199</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discount</span>
+                        <span>₹0</span>
+                    </div>
+                    <div class="summary-row-total">
+                        <span>Total</span>
+                        <span>₹4,999</span>
+                    </div>
+                </div>
+                <button class="pay-btn">
+                    Pay Now ₹4,999
+                </button>
+                <div class="images-sec">
+                    <img src="images/ssl.png" alt="Secure">
+                    <img src="images/razor.png" alt="Razorpay">
+                    <img src="images/sec.png" alt="Safe">
+                </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
