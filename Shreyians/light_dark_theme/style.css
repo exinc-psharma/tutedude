@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#f4f7fc;
+    color:#222;
+}
+
+.container{
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    width:350px;
+}
+
+h1{
+    margin-bottom:10px;
+}
+
+p{
+    margin-bottom:25px;
+    color:#666;
+}
+
+button{
+    border:none;
+    outline:none;
+    padding:12px 24px;
+    border-radius:999px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+/* Dark Theme Class */
+.dark{
+    background:#111827;
+    color:white;
+}
+
+.dark .container{
+    background:#1f2937;
+    box-shadow:0 10px 30px rgba(255,255,255,0.05);
+}
+
+.dark p{
+    color:#cbd5e1;
+}
+
+.dark button{
+    background:#f59e0b;
+    color:#111827;
+}
