@@ -245,6 +245,7 @@ const students = [
 const container= document.querySelector(".cards-container");
 
 function showUsers(arr){
+    container.innerHTML = "";
     const cards = arr.map(function(student){
         const card = document.createElement("div");
         card.classList.add("card");
@@ -282,7 +283,6 @@ btn.addEventListener("click", function(){
     let newUsers= students.filter((user)=>{
         return user.name.toLowerCase().startsWith(inp.value.toLowerCase());
     });
-    container.innerHTML="";
     showUsers(newUsers);
     let noRecords=document.querySelector("#noRecords");
     if(newUsers.length === 0){
