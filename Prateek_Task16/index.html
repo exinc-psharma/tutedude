@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Real time search filter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Javascript Task</h1>
-    <h2>Promises</h2>
+    <header>
+        <nav>
+            <div class="greet">
+                <h2>Hi, Username</h2>
+            </div>
+            <div class="login">
+                <button>Login</button>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <div class="search">
+            <div class="input">
+                <input class="inp" type="text" placeholder="Search Student">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <button id="button">Search</button>
+        </div>
+        <div class="search-name"></div>
+        <p id="noRecords">No records found !!</p>
+        <div class="cards-container" id="cards-container"></div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,58 +1,99 @@
-# JavaScript Promise-Based Divide Function
+# Student Search Filter
 
 ## Description
 
-A JavaScript program that performs division using Promises. The function accepts two numbers as input and returns a Promise that resolves with the division result or rejects with an appropriate error message when invalid input is provided or division by zero is attempted.
+This project is a JavaScript-based student search filter application that dynamically displays student records in card format.
+
+The student data is stored as an array of objects containing details such as name, marks, class, and address. JavaScript is used to dynamically generate the student cards and display them on the webpage.
+
+Users can enter a student's name in the search field and click the Search button to filter the displayed student records. The filtering is case-insensitive and uses JavaScript's `filter()` method.
 
 ## Features
 
-* Performs division using JavaScript Promises
-* Resolves with the division result for valid inputs
-* Rejects when division by zero is attempted
-* Rejects when invalid inputs are provided
-* Uses an arrow function as required
-* Demonstrates Promise handling with `.then()` and `.catch()`
-* Includes multiple test cases for validation
+- Displays student records dynamically using JavaScript.
+- Stores student information using an array of objects.
+- Displays student name, marks, class, and address.
+- Uses the `map()` method to generate student card elements.
+- Uses the `filter()` method to search student records.
+- Provides case-insensitive searching.
+- Displays matching student records when the Search button is clicked.
+- Displays a "No records found" message when no matching students are found.
+- Displays the searched name above the filtered results.
+- Automatically updates the displayed cards after every search.
+- Responsive card layout using CSS Flexbox.
+- Fixed navigation bar and search section.
+
+## CSS Concepts Used
+
+- Universal Selector
+- Box Model
+- Flexbox
+- `flex-wrap`
+- Fixed Positioning
+- Margins and Padding
+- `gap`
+- Border Radius
+- Background Colors
+- Font Styling
+- Hover Effects
+- CSS Selectors
+- `z-index`
 
 ## JavaScript Concepts Used
 
-* Arrow Functions
-* Promises
-* `resolve()` and `reject()`
-* Error Handling
-* Conditional Statements (`if-else`)
-* Template Literals
-* Type Checking (`typeof`)
-* `Number.isNaN()`
-* Console Output (`console.log()`)
-* Promise Chaining (`.then()` and `.catch()`)
+- Arrays
+- Objects
+- Functions
+- `map()` Method
+- `filter()` Method
+- Arrow Functions
+- Callback Functions
+- DOM Manipulation
+- `document.querySelector()`
+- `document.createElement()`
+- `classList.add()`
+- `appendChild()`
+- `innerHTML`
+- Event Listeners
+- Template Literals
+- String Methods
+- `toLowerCase()`
+- `startsWith()`
+- Conditional Statements
 
 ## How to Run
 
-1. Open the project folder.
-2. Open `index.html` in a browser.
-3. Open Developer Tools (`F12`).
-4. Navigate to the **Console** tab.
-5. Observe the results of successful and failed division operations.
+1. Download or clone the project files.
+2. Make sure `index.html`, `style.css`, `script.js`, and `README.md` are in the same project folder.
+3. Open `index.html` in a web browser or run the project using Live Server.
+4. The student records will be displayed automatically.
+5. Enter a student's name in the search field.
+6. Click the Search button to display matching student records.
+7. If no matching student is found, a "No records found" message will be displayed.
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript (ES6)
+- HTML5
+- CSS3
+- JavaScript
 
-## Learning Outcomes
+## Improvements from Previous Tasks
 
-* Learned how to create and return Promises.
-* Practiced using `resolve()` and `reject()`.
-* Understood asynchronous result handling using `.then()` and `.catch()`.
-* Learned how to handle division by zero errors.
-* Practiced validating user inputs before processing data.
-* Improved understanding of Promise-based programming.
+- Worked with arrays containing multiple JavaScript objects.
+- Dynamically created HTML elements using JavaScript.
+- Used the `map()` method to generate student card elements.
+- Used the `filter()` method to search through student records.
+- Implemented case-insensitive searching using string methods.
+- Dynamically updated the DOM based on filtered results.
+- Implemented empty search result handling.
+- Created multiple reusable student cards from JavaScript data.
+- Combined HTML, CSS, and JavaScript to build an interactive search interface.
 
 ## Notes
 
-* This project was completed as part of the TuteDude Frontend Development course.
-* The division function uses Promises to demonstrate asynchronous programming concepts.
-* Multiple test cases are included to verify both successful and failed operations.
-* Results are displayed in the browser console.
+- Student records are stored locally in a JavaScript array.
+- Student cards are dynamically generated from the student data.
+- Searching is performed when the Search button is clicked.
+- The search is case-insensitive.
+- The current search uses `startsWith()`, so the entered text must match the beginning of the student's name.
+- No external API or database is used.

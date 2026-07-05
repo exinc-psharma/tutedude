@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 50px;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid #f2f2f2;
+}
+
+.greet{
+    color: rgba(0, 0, 0, 0.775);
+}
+.login button{
+    padding: 13px 50px;
+    color: blue;
+    border-radius: 25px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: #eaf2ff;
+}
+hr{
+    color: #f2f2f2;
+    margin: 10px 0;
+}
+.search{
+    position: fixed;
+    top: 80px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 50px;
+    padding: 20px 0;
+    background-color: white;
+    z-index: 999;
+}
+.input{
+    background-color: #f2f2f2;
+    padding: 13px 35px 13px 20px;
+    border-radius: 10px;
+}
+.input input{
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+}
+.input i{
+    margin-left: 25px;
+    color: rgba(0, 0, 0, 0.775);
+}
+.search button{
+    padding: 13px 50px;
+    color: white;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    background-color: #6c00e7;
+}
+.search button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+main{
+    padding-top: 200px;
+    margin-left: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    background-color: #f2f2f2;
+    padding: 15px 50px 15px 15px;
+    border-radius: 7px;
+}
+.card p{
+    color: darkslategrey;
+}
+.card p span{
+    color: rgba(0, 0, 0, 0.775);
+    font-weight: 600;
+}
+.cards-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content: flex-start;
+}
+#noRecords{
+    display:none;
+    color:red;
+}
+.search-name{
+    margin-bottom: 20px;
+    display: none;
+}
